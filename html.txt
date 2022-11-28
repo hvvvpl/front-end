@@ -1,0 +1,19 @@
+lista com definições:
+<dl>
+    <dt> </dt>
+    <dd> </dd>
+    <dt> </dt>
+    <dd> </dd>
+</dl>
+
+tabela:
+<tr>
+    <th></th>
+    <th></th>
+</tr>
+<tr>
+    <td rowspan="2"></td>
+    <!--amplia o conteudo da tabela para ocupar mais linhas-->
+    <td></td>
+</tr>
+<!--shift+alt+i formata o documento-->

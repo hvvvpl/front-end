@@ -1,0 +1,75 @@
+elemento{}
+.classe{}
+#id{}
+[atributo]{}
+*{todos}
+
+pseudo-classe:
+:first-of-type  Primeiro elemento de determinado tipo
+:last-of-type   Último elemento de determinado tipo
+:hover          Acontece quando o mouse passa sobre
+:focus          Acontece quando elemento está em foco
+:visited        Acontece com links já visitados
+:link           Condição original dos links
+:active         Acontece quando o elemento é ativado
+:nth-child(n)   Enésimo elemento  (n) 
+:first-child    Primeiro elemento filho
+:last-child     Último elemento filho
+:empty          Elemento vazio ou sem texto
+:not()          Negação de um elemento. Ex. :not(p)
+
+A, B   { ... }       Equivale a duas regras distintas A { } e B { }
+                    Ex: p, span { color: black; }
+AB   {  ... }        Elementos associados a A e B ao mesmo tempo. Uso com classes, IDs.
+                    Ex: p.titulo { color: black; }
+A     B   { ... }    Elementos associados a B, descendentes de elementos associados a A. 
+                    Ex: div p { color: black;}
+A   >   B   { ... }  Elementos associados a B, filhos de elementos associados a A
+                    Ex: div > p { color: black; }
+A   +   B   { ... }  Elementos associado a B, próximo irmão de elementos associado a A
+                    Ex: div + p { color: black; }
+A   ~   B   { ... }  Elementos associados a B, próximos irmãos de elementos associados a A
+                    Ex: div ~ p { color: black; }
+
+margin:         externo do elemento
+border:         entre margin e padding
+padding:        interno do elemento
+content:        tudo dentro do padding
+float:          flutua o elemento para uma direção
+vertical-align: alinha o elemento para uma direção 
+box-sizing: border-box;     considera o border para definir o tamanho de algo
+border-radius:  canto arredondado     
+
+display: none           não mostra             
+display: block          ocupa toda a linha
+display: inline         linha após linha
+display: inline-block   bloco porem pode ser disposto um após o outro na mesma linha
+
+font-family:    tipo da fonte
+font-size:      tamanho    
+font-style:     normal, italic, bold
+font-weigth:    grossura da fonte ex(normal, bolder, lighter, 100, 900)
+font-variant:   variações de fonte como small-caps(tudo maiusculo com tamanho menor)
+line-height:    altura da linha
+color:
+text-align:
+text-shadow:
+text-decoration:
+letter-spacing / word-spacing:  espaço entre letras e palavras
+text-transform:
+
+background-color:       cor de fundo
+background-image:       imagem de fundo url()   linear-gradient(red,blue);
+background-repeat:      (no-repeat) 
+background-position:    
+background-size:        tamanho (100%)
+opacity:               
+clear: both;            limpa o float da div
+overflow: auto;         a div tem o tamanho do conteudo mesmo flutuando
+
+position:static         segue o fluxo       
+position:relative       segue o fluxo e sofre altereções de disposição
+position:fixed          não segue o fluxo comum e não sofre altereções de disposição
+position:absolute       não segue o fluxo comum e sofre altereções de disposição
+z-index:                define a sobreposição (quanto maior mais sobreposto)
+ 

@@ -1,0 +1,31 @@
+body {
+    background-color: grey;
+}
+
+header {
+    background-color: lightgrey;
+}
+
+nav li {
+    list-style: none;
+}
+
+main {
+    width: 69%;
+    float: left;
+    background-color: lightgrey;
+}
+
+aside {
+    width: 29%;
+    float: right;
+    background-color: lightgrey;
+}
+
+aside li {
+    list-style: none;
+}
+footer{
+    background-color: lightgrey;
+
+}
