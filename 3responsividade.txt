@@ -1,0 +1,193 @@
+layouts:
+    liquido:    em '%'
+    fixo        em 'px'
+    responsivo  em '% e px'
+
+
+mobile first: 
+    importante pois o acesso pelo celular é mais comum
+
+
+projeto:
+    mapa mental
+    mapa do site "define a navegação do site"
+    wireframe
+    taskflow: define as possibilidade de caminhos que o usuario pode fazer
+
+
+viewport:
+    largura/área visivel de um aparelho
+
+        <meta name="viewport" content=" width=x,y,z ">
+            x: valor em px ou 'device-width'
+            y: initial-scale=1   escala de zoom inicial apresentada
+            z: minimum-scale/maximum-scale/user-scalable  zoom minimo e maximo ou a gosto do usuario
+
+    tamanhos relativos que podem ser usados:
+
+        vw: viewport width
+        vh: viewport height
+        vmin: viewport mínima
+        vmax: viewport maxima
+        exemplo: 100vw = 100% da largura da janela
+
+
+media queries:
+    @media   x     y          y2
+    @media screen and (max-width: 768px){
+        #codigo
+    }
+
+    x: midias possiveis
+        all
+        print
+        screen
+        speech
+        braile
+        projection
+
+    y: condicional
+        and
+        not
+    
+breackpoints: telas pequenas resolução lógica é diferente da resolução física
+    calculo de breackpoint:
+        resolução lógica = resolução física / razão de pixel do dispositivo "pixel ratio"
+
+    320: celular retrato
+    480: celular paisagem/retrato
+    600: tablet pequeno retrato
+    768: tablet grande retrato
+    800: celulares e tablets retrato e paisagem
+    1024: tablet grande paisagem
+    1280: pc
+    1440: pc tela cheia
+
+
+layouts:
+    flex: 
+        display: flex;   ativa o flex na div
+        flex: 1 0 200px;
+              1: pode expandir
+                0: não pode encolher 
+                  200px: tamanho inicial dentro do flex(podendo aumentar ou encolher)
+        
+        comandos do flex dentro das divs no site css tricks
+                  
+
+
+    grid:
+        display: grid;                               ativa o grid na div
+        grid-teplate-columns: repeat(3, 100px);      cria 3 divisões(4 colunas)de 100px
+                        ou
+        grid-teplate-columns: 1fr 1fr 2fr            cria 3 divisões(4 colunas)(duas de 1 fração e uma de 2 frações) 25% + 25% + 50%
+
+        .class {
+            grid-columns: 1/3;                       .class vai da 1 a 3 coluna
+            grid-row: 1;                             .class ocupa a 1 linha
+        }
+
+
+
+    menu mobile:
+    --- criando checkbox, menu de barras, fechar menu---
+    html
+        <head>
+            <script src="https://kit.fontawesome.com/960d74f0ca.js" crossorigin="anonymous"></script>
+        </head>
+        <nav>
+            <input type="checkbox" id="id">
+            <label for="id" class="id1">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-circle-xmark"></i>
+            </label>
+        </nav>
+    css
+        #menuToggle {
+        display: none;
+        }
+        .menu-icon {
+        display: none;
+        }
+
+        /* Menu Mobile */
+
+        @media screen and (max-width: 768px) {
+
+        .header{
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+        .header nav {
+            display: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .menu {
+            display: flex;
+            position: fixed;
+            flex-wrap: wrap;
+            align-content: center;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 0%;
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            -webkit-transition: height 0.3s;
+            -moz-transition: height 0.3s;
+            -ms-transition: height 0.3s;
+            -o-transition: height 0.3s;
+            transition: height 0.3s;
+        }
+
+        .menu li {
+            display: block;
+            width: 100%;
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
+
+        .menu li a {
+            display: block;
+            text-align: center;
+            width: 100%;
+
+        }
+        .menu-icon {
+            width: 50px;
+            height: inherit;
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 30px;
+            line-height: 60px;
+            color: white;
+            z-index: 999;
+        }
+        #menuToggle:checked ~ label i:nth-child(2) {
+            display: block;
+        }
+        #menuToggle:checked ~ label i:first-child {
+            display: none;
+        }
+        #menuToggle:not(:checked) ~ label i:first-child {
+            display: block;
+        }
+        #menuToggle:not(:checked) ~ label i:nth-child(2) {
+            display: none;
+        }
+
+        #menuToggle:checked ~ ul {
+            height: 100%;
+        }
+        .menu-icon i {
+            font-size: 1.7em;
+        }
+        }
+                
+
+
+
+

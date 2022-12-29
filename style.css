@@ -1,31 +1,66 @@
-body {
-    background-color: grey;
+html{
+    height: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none
+}
+
+img{
+
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     background-color: lightgrey;
+    padding: 16px;
+    align-items: center;
 }
-
-nav li {
-    list-style: none;
+header a{
+    background-color: lightcoral;
+    color: black;
+    padding: 20px;
+    flex: 0 0 90px;
 }
-
-main {
-    width: 69%;
-    float: left;
-    background-color: lightgrey;
+header a:hover,header li:hover,nav li:hover {
+    font-size: 90%;
 }
-
-aside {
-    width: 29%;
-    float: right;
-    background-color: lightgrey;
+header ul{
+    display: flex;
 }
+header li{
+    display: flex;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: grey;
+    flex: 0 0 100px;
+}
+nav{
+    background-color: lightgreen;
+}
+nav ul{
+    display: flex;
+    background-color: lightslategray;
+    justify-content: space-between;
 
-aside li {
-    list-style: none;
+}
+nav li{
+    display: flex;
+    background-color: lightblue;
+    padding: 20px;
+    flex: 0 0 300px;
+    text-align: center;
+    justify-content: space-around;
+}
+main{
+    padding: 10px;
+
 }
 footer{
-    background-color: lightgrey;
-
+    background-color: grey;
 }
