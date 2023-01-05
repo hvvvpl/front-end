@@ -90,7 +90,7 @@ layouts:
 
 
     menu mobile:
-        1_ criar checkbox, e label com dois "i" para serem os botões menu e fechar
+        1_ criar checkbox dentro do nav, e label com dois "i" para serem os botões menu e fechar
         2_ display none nos itens criados
         2.1_ media querie para aparecer o menu criado
         2.2_ :checked  e  :not(:checked)  para mostrar e esconder botões e menu
