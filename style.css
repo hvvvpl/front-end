@@ -128,4 +128,8 @@ footer p{
         font-size: 1.7em;
     }
 
+    main{
+        margin-top: 60px;
+    }
+
 }
