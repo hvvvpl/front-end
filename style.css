@@ -15,18 +15,22 @@ li{
 }
 
 
+
+
 header{
     background-color: rgb(51, 51, 51);
     padding: 10px;
     height: 40px;
+    align-items: center;
 }
+
 nav input, nav label{
     display: none;
 }
 nav ul{
-
     display: flex;
     justify-content:space-evenly;
+
 
 }
 nav ul li{
@@ -39,9 +43,7 @@ main{
     background-color: lightblue;
     
 }
-#sobreosite{
 
-}
 
 
 footer{
@@ -54,7 +56,7 @@ footer{
     justify-content: space-evenly;
 }
 footer p{
-    background-color: grey;
+
 
 }
 
