@@ -1,0 +1,15 @@
+getbootstrap.com para instalar e usar
+
+
+
+bootstrap grid:
+    xs: < 570px
+    sm: => 576px
+    md: => 768px
+    lg: => 992px
+    xl: => 1200px
+
+    deve ter class container com class row dentro para ativar o que tiver dentro
+
+    div class="col-12 col-md-6"         a div vai ocupar as 12 colunas do bootstrap exeto no tamanho de tela 'md' 
+   
